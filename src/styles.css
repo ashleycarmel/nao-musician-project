@@ -51,7 +51,7 @@ header a {
   margin-top: 32px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
