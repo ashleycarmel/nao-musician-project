@@ -5,13 +5,21 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -48,7 +56,7 @@ header h3 {
   margin: 0;
 }
 
-header a {
+.button {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -63,6 +71,45 @@ header a {
   border-radius: 100px;
 }
 
+main {
+  background-color: white;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+main h3 {
+  background-color: rgba(136, 93, 241, 0.1);
+  color: #462cb2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding: 2px 6px;
+  width: 120px;
+  height: 20px;
+  margin: 0;
+}
+
+main h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #272044;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(
@@ -72,7 +119,6 @@ footer {
     url("../images/nao-footer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 140px 0;
 }
 
 footer h3 {
@@ -120,5 +166,14 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
