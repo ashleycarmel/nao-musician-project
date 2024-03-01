@@ -20,6 +20,10 @@
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.spotify-embeds {
+    margin: 30px;
+}
+
 .card {
   background-color: white;
   margin: 30px 0;
@@ -41,6 +45,10 @@ section {
 
 section.secondary {
   background: #f8f8f8;
+}
+
+section.tertiary {
+  background-color: #885df11a;
 }
 
 header {
@@ -119,6 +127,7 @@ main h3 {
   letter-spacing: 6px;
   padding: 2px 6px;
   width: auto;
+  opacity: 0.7;
 }
 
 main h4 {
